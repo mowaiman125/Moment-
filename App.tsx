@@ -351,19 +351,6 @@ const App: React.FC = () => {
             placeholder="請輸入補充描述..." 
             rows={4}
           />
-          <div className="overflow-x-auto no-scrollbar">
-            <div className="flex space-x-2 pb-2">
-              {['極佳品品相', '正常使用歲月痕跡', '建議保養', '代用錶帶', '無盒單'].map(tag => (
-                <button 
-                  key={tag}
-                  onClick={() => updateField('notes', form.notes + (form.notes ? ' ' : '') + tag)}
-                  className="whitespace-nowrap px-3 py-1 rounded-full text-xs font-medium bg-white text-gray-600 border border-gray-300 hover:bg-gray-50 transition-colors"
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
-          </div>
         </section>
       </main>
 
